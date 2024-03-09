@@ -10,7 +10,7 @@ import router from "./routers/index.ts";
 import { corsOptions } from "./configs/cors.config.ts";
 
 const app = express();
-const PORT: string = process.env.PORT || "8000";
+const PORT: string = process.env.PORT || "5000";
 dotenv.config();
 
 declare global {
