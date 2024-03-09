@@ -49,8 +49,6 @@ const authControllers = {
         return res.status(404).json({ error: "This mailid doesn't exists" });
       }
       const match = await verifyPassword(password, isExist.password);
-      console.log("match", match);
-
       if (!match) {
         return res
           .status(401)
@@ -71,7 +69,7 @@ const authControllers = {
     } catch (error) {
       if (error instanceof Error) {
         console.log(`Error: ${error.message}`);
-        return res.status(500).json({ error: "Something went wrong!" });
+        return res.status(500).json({ error: error.message });
       }
     }
   },
