@@ -1,7 +1,4 @@
-const whitelist = [
-  "http://localhost:5173",
-  "https://yours-taskmanager.netlify.app",
-];
+const whitelist = ["http://localhost:5173", "https://mentis-eye.netlify.app"];
 
 // Configure CORS options
 export const corsOptions = {
