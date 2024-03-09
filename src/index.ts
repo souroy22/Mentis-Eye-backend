@@ -35,5 +35,3 @@ app.use("/api/v1", router);
 app.listen(parseInt(PORT, 10), `0.0.0.0`, () => {
   console.log(`Server is running on PORT: ${PORT}`);
 });
-
-export default app;
