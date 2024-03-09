@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-dotenv.config();
+// import dotenv from "dotenv";
+// dotenv.config();
 
 const connection1 = mongoose.createConnection(process.env.MONGO_URI_1 || "");
 const connection2 = mongoose.createConnection(process.env.MONGO_URI_2 || "");
