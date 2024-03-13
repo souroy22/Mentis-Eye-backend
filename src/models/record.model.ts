@@ -1,4 +1,4 @@
-// src/models/record.ts
+// src/models/record
 import mongoose from "mongoose";
 import { connection1, connection2, connection3 } from "../db/dbConnect";
 

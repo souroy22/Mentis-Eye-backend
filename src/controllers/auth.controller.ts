@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import User from "../models/user.model.ts";
-import getUserData from "../services/utils/getUser.util.ts";
-import verifyPassword from "../services/utils/verifyPassword.util.ts";
-import genarateToken from "../services/utils/generateToken.util.ts";
-import destroyToken from "../services/utils/destroyToken.util.ts";
+import User from "../models/user.model";
+import getUserData from "../services/utils/getUser.util";
+import verifyPassword from "../services/utils/verifyPassword.util";
+import genarateToken from "../services/utils/generateToken.util";
+import destroyToken from "../services/utils/destroyToken.util";
 
 type USER_TYPE = {
   name: string;

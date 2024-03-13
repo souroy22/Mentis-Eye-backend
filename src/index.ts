@@ -6,11 +6,11 @@ import morgan from "morgan";
 import cors from "cors";
 
 // files
-import router from "./routers/index.ts";
-import { corsOptions } from "./configs/cors.config.ts";
+import router from "./routers/index";
+import { corsOptions } from "./configs/cors.config";
 
 const app = express();
-const PORT: string = process.env.PORT || "5000";
+const PORT: string = process.env.PORT || "6000";
 dotenv.config();
 
 declare global {
@@ -26,6 +26,7 @@ app.use(express.json({ limit: "10kb" }));
 app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(cookieParser());
+
 app.get("/", (_: Request, res: Response) => {
   res.send("Hiiii Hello");
 });
